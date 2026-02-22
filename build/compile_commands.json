@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/build",
+  "command": "/usr/bin/clang++  -I\"/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/.\" -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -pedantic -Wall -Wextra -o CMakeFiles/run-main.dir/main.cpp.o -c \"/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/main.cpp\"",
+  "file": "/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/main.cpp",
+  "output": "CMakeFiles/run-main.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/build",
+  "command": "/usr/bin/clang++  -I\"/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/.\" -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -pedantic -Wall -Wextra -o CMakeFiles/run-main.dir/hash_functions.cpp.o -c \"/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/hash_functions.cpp\"",
+  "file": "/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/hash_functions.cpp",
+  "output": "CMakeFiles/run-main.dir/hash_functions.cpp.o"
+},
+{
+  "directory": "/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/build",
+  "command": "/usr/bin/clang++  -I\"/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/.\" -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -pedantic -Wall -Wextra -o CMakeFiles/run-main.dir/random220.cpp.o -c \"/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/random220.cpp\"",
+  "file": "/Users/jaden/Desktop/CSCI220_Data_Structures/CSCI220_Data_Structures/Programing Projects/2A-Hashtable/random220.cpp",
+  "output": "CMakeFiles/run-main.dir/random220.cpp.o"
+}
+]

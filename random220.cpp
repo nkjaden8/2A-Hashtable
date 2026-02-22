@@ -6,12 +6,11 @@
 
 #include <cmath>
 #include <cstdlib>
+#include <cassert>
 #include <iostream>
 #include <chrono>
-#include <algorithm>
 
 #include "random220.h"
-
 
 #define DEFAULT    123456789L  /* initial seed, use 0 < DEFAULT < MODULUS   */
 static long seed = DEFAULT;    /* seed is the state of the generator        */
@@ -57,18 +56,12 @@ long seed_prng( long s )
 	return seed;
 }
 
-long get_state( )
-{
-	return seed;
-}
+
 
 bool bernoulli( const double p )
 {
 	// compilicated stuff, eh?
-	if( p < 0 || p > 1 ) { 
-		std::cerr << "random220 warning: bernoulli(p) should have 0<=p<=1" << std::endl;
-		std::exit(1);
-	}
+	assert( p>=0 );
 	return prng() < p;
 }
 
@@ -76,20 +69,25 @@ bool coinflip( ) { return bernoulli(0.5); }
 
 double uniform( const double a, const double b )
 {
-	if( b<a ) { 
-		std::cerr << "random220 error: uniform(a,b) should have a<=b" << std::endl;
-		std::exit(1);
-	}
+	assert( a<=b );
 	return a + prng()*(b-a);
 }
 
 long equalikely( const long a, const long b )
 {
-	if( b<a ) { 
-		std::cerr << "random220 error: equalikely(a,b) should have a<=b" << std::endl;
-		std::exit(1);
-	}
+	assert( a<=b );
 	return ::floor( uniform(a,b+1));
 }
 
-
+template<typename T>
+void fisher_yates( std::vector<T>& v, size_t count )
+{
+	// fisher yates 
+	for( size_t i=0; i<v.size()-1 && count!=0; ++i ) {
+		T hold(v[i]);
+		size_t to = equalikely(i,v.size()-1);
+		v[i] = v[to];
+		v[to] = hold;
+		--count;
+	}
+}
